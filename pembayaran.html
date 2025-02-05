@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pembayaran</title>
+    <style>
+        /* Mengatur font umum */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Header dan menu */
+        header {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Form pembayaran */
+        .payment-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .payment-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .payment-form h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group button {
+            width: 100%;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #16a085;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Halaman Pembayaran Selot Kelen</h1>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="pembayaran.html">Pembayaran</a>
+    <a href="Layanan.html">Layanan</a>
+    <a href="withdraw.html">Withdraw</a>
+    <a href="https://wa.me/qr/IQBWBLD6QHEHB1">Kontak</a>
+</nav>
+
+<div class="payment-container">
+    <div class="payment-form">
+        <h2>Form Deposit ni untu Holiss asu</h2>
+        <form action="#" method="POST">
+            <div>
+                <label for="name">Tujuan Deposit</label>
+                <p>0812******80 : A/N Divi Wijiyi</p>
+                <p>0822******76 : a/n Michiil Ninggilin
+                <p>0892******43 : a/n Wihyi Migigdir</p>
+                </p>
+            </div>
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Jumlah Pembayaran (IDR)</label>
+                <input type="number" id="amount" name="amount" placeholder="Masukkan jumlah pembayaran" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Metode Pembayaran</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Pilih Metode Pembayaran</option>
+                    <option value="credit-card">Kartu Kredit</option>
+                    <option value="bank-transfer">Transfer Bank</option>
+                    <option value="e-wallet">Dompet Digital</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Lakukan Pembayaran</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Website Pembayaran. Semua hak cipta dilindungi.</p>
+</footer>
+
+</body>
+</html>
